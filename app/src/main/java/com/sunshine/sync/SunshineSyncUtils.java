@@ -25,8 +25,10 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
+import androidx.work.Constraints;
 import androidx.work.ExistingPeriodicWorkPolicy;
 import androidx.work.ExistingWorkPolicy;
+import androidx.work.NetworkType;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
@@ -47,7 +49,6 @@ import java.util.concurrent.TimeUnit;
 
 public class SunshineSyncUtils {
 
-    private static String UNIQUE_PERIODIC_WORK_NAME = "my-unique-work";
     private static boolean sInitialized;
 
 
@@ -62,8 +63,19 @@ public class SunshineSyncUtils {
         if (sInitialized) return;
         sInitialized = true;
 
-        PeriodicWorkRequest request = new PeriodicWorkRequest.Builder(SunshineWorker.class, 1, TimeUnit.HOURS).build();
-        WorkManager.getInstance(context).enqueueUniquePeriodicWork(UNIQUE_PERIODIC_WORK_NAME, ExistingPeriodicWorkPolicy.KEEP,request);
+
+        Constraints constraints = new Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.CONNECTED)
+                .build();
+
+        PeriodicWorkRequest request = new PeriodicWorkRequest.Builder(SunshineWorker.class, 1, TimeUnit.DAYS)
+                .setConstraints(constraints)
+                .build();
+
+        String UNIQUE_PERIODIC_WORK_NAME = "my-unique-work";
+
+        WorkManager.getInstance(context)
+                .enqueueUniquePeriodicWork(UNIQUE_PERIODIC_WORK_NAME, ExistingPeriodicWorkPolicy.KEEP,request);
 
 
     }

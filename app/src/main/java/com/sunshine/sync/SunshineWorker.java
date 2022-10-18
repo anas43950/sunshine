@@ -20,7 +20,7 @@ import java.util.concurrent.Executors;
 
 public class SunshineWorker extends Worker {
 
-    private Context context;
+    private final Context context;
 
 
     public SunshineWorker(@NonNull Context appContext, @NonNull WorkerParameters workerParams) {
@@ -59,7 +59,7 @@ public class SunshineWorker extends Worker {
          * We only want to show the notification if the user wants them shown and we
          * haven't shown a notification in the past day.
          */
-        if (notificationsEnabled || oneDayPassedSinceLastNotification) {
+        if (notificationsEnabled && oneDayPassedSinceLastNotification) {
             NotificationUtils.notifyUserOfNewWeather(context);
         }
     }

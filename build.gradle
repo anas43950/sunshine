@@ -3,7 +3,7 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.3.1'
@@ -14,13 +14,13 @@ buildscript {
 }
 
 allprojects {
-    String osName = System.getProperty("os.name").toLowerCase();
+    String osName = System.getProperty("os.name").toLowerCase()
     if (osName.contains("windows")) {
         buildDir = "C:/tmp/${rootProject.name}/${project.name}"
     }
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
