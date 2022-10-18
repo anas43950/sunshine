@@ -1,4 +1,4 @@
-package com.sunshine.data;
+package com.technowapps.sunshine.data;
 
 
 import android.content.Context;

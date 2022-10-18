@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sunshine;
+package com.technowapps.sunshine;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,10 +29,10 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
 import com.example.android.sunshine.R;
-import com.sunshine.data.SunshinePreferences;
-import com.sunshine.sync.SunshineSyncUtils;
-import com.sunshine.utilities.AppExecutors;
-import com.sunshine.utilities.NetworkUtils;
+import com.technowapps.sunshine.data.SunshinePreferences;
+import com.technowapps.sunshine.sync.SunshineSyncUtils;
+import com.technowapps.sunshine.utilities.AppExecutors;
+import com.technowapps.sunshine.utilities.NetworkUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

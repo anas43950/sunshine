@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sunshine.utilities;
+package com.technowapps.sunshine.utilities;
 
-import com.sunshine.data.Weather;
+import com.technowapps.sunshine.data.Weather;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -13,38 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sunshine.sync;
+package com.technowapps.sunshine.sync;
 
 import android.content.Context;
-import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.Observer;
 import androidx.work.Constraints;
 import androidx.work.ExistingPeriodicWorkPolicy;
-import androidx.work.ExistingWorkPolicy;
 import androidx.work.NetworkType;
 import androidx.work.PeriodicWorkRequest;
-import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
-import androidx.work.WorkRequest;
 
-import com.sunshine.MainActivity;
-import com.sunshine.SettingsFragment;
-import com.sunshine.data.Weather;
-import com.sunshine.data.WeatherDatabase;
-import com.sunshine.utilities.AppExecutors;
+import com.technowapps.sunshine.utilities.AppExecutors;
 
 
-import org.jetbrains.annotations.TestOnly;
-
-import java.util.List;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 public class SunshineSyncUtils {

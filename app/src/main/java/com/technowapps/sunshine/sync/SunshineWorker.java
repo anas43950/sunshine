@@ -1,22 +1,15 @@
-package com.sunshine.sync;
+package com.technowapps.sunshine.sync;
 
 import android.content.Context;
 import android.text.format.DateUtils;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import androidx.concurrent.futures.CallbackToFutureAdapter;
-import androidx.work.ListenableWorker;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
-import com.google.common.util.concurrent.ListenableFuture;
-import com.sunshine.data.SunshinePreferences;
-import com.sunshine.utilities.NotificationUtils;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import com.technowapps.sunshine.data.SunshinePreferences;
+import com.technowapps.sunshine.utilities.NotificationUtils;
 
 public class SunshineWorker extends Worker {
 

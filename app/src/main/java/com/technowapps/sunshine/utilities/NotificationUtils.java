@@ -1,4 +1,4 @@
-package com.sunshine.utilities;
+package com.technowapps.sunshine.utilities;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -14,11 +14,11 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.TaskStackBuilder;
 import androidx.core.content.ContextCompat;
 
-import com.sunshine.DetailActivity;
+import com.technowapps.sunshine.DetailActivity;
 import com.example.android.sunshine.R;
-import com.sunshine.data.SunshinePreferences;
-import com.sunshine.data.Weather;
-import com.sunshine.data.WeatherDatabase;
+import com.technowapps.sunshine.data.SunshinePreferences;
+import com.technowapps.sunshine.data.Weather;
+import com.technowapps.sunshine.data.WeatherDatabase;
 
 
 public class NotificationUtils {

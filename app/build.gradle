@@ -4,7 +4,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.sunshine"
+        applicationId "com.technowapp.sunshine"
         minSdkVersion 16
         targetSdkVersion 33
         versionCode 1

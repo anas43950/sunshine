@@ -1,4 +1,4 @@
-package com.sunshine.utilities;
+package com.technowapps.sunshine.utilities;
 
 import android.os.Handler;
 import android.os.Looper;

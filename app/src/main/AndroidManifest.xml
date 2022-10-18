@@ -32,7 +32,7 @@
 
         <!--The manifest entry for our MainActivity. Each Activity requires a manifest entry-->
         <activity
-            android:name="com.sunshine.MainActivity"
+            android:name="com.technowapps.sunshine.MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.Forecast"
             android:exported="true">
@@ -44,17 +44,17 @@
 
         <!--The manifest entry for our DetailActivity. Each Activity requires a manifest entry-->
         <activity
-            android:name="com.sunshine.DetailActivity"
+            android:name="com.technowapps.sunshine.DetailActivity"
             android:label="@string/title_activity_detail"
-            android:parentActivityName="com.sunshine.MainActivity"
+            android:parentActivityName="com.technowapps.sunshine.MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.sunshine.MainActivity"/>
+                android:value="com.technowapps.sunshine.MainActivity"/>
         </activity>
 
         <!--The manifest entry for our SettingsActivity. Each Activity requires a manifest entry-->
-        <activity android:name="com.sunshine.SettingsActivity"/>
+        <activity android:name="com.technowapps.sunshine.SettingsActivity"/>
 
 
     </application>

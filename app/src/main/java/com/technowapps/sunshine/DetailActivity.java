@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sunshine;
+package com.technowapps.sunshine;
 
 import android.content.Intent;
 
@@ -30,11 +30,11 @@ import android.view.MenuItem;
 
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.databinding.ActivityDetailBinding;
-import com.sunshine.data.Weather;
-import com.sunshine.data.WeatherDatabase;
-import com.sunshine.utilities.AppExecutors;
-import com.sunshine.utilities.SunshineDateUtils;
-import com.sunshine.utilities.SunshineWeatherUtils;
+import com.technowapps.sunshine.data.Weather;
+import com.technowapps.sunshine.data.WeatherDatabase;
+import com.technowapps.sunshine.utilities.AppExecutors;
+import com.technowapps.sunshine.utilities.SunshineDateUtils;
+import com.technowapps.sunshine.utilities.SunshineWeatherUtils;
 
 public class DetailActivity extends AppCompatActivity {
 

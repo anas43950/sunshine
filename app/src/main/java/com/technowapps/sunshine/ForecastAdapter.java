@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sunshine;
+package com.technowapps.sunshine;
 
 import android.content.Context;
 
@@ -27,9 +27,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.sunshine.R;
-import com.sunshine.data.Weather;
-import com.sunshine.utilities.SunshineDateUtils;
-import com.sunshine.utilities.SunshineWeatherUtils;
+import com.technowapps.sunshine.data.Weather;
+import com.technowapps.sunshine.utilities.SunshineDateUtils;
+import com.technowapps.sunshine.utilities.SunshineWeatherUtils;
 
 import java.util.List;
 

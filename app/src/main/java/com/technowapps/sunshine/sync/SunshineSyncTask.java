@@ -13,21 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sunshine.sync;
+package com.technowapps.sunshine.sync;
 
 
 import android.content.Context;
-import android.text.format.DateUtils;
-import android.util.Log;
 
-import com.sunshine.data.SunshinePreferences;
-import com.sunshine.data.Weather;
+import com.technowapps.sunshine.data.Weather;
+import com.technowapps.sunshine.data.WeatherDatabase;
+import com.technowapps.sunshine.utilities.NetworkUtils;
 
-import com.sunshine.data.WeatherDatabase;
-
-import com.sunshine.utilities.NetworkUtils;
-import com.sunshine.utilities.NotificationUtils;
-import com.sunshine.utilities.OpenWeatherJsonUtils;
+import com.technowapps.sunshine.utilities.OpenWeatherJsonUtils;
 
 import java.net.URL;
 
