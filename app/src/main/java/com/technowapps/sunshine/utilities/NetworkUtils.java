@@ -86,7 +86,6 @@ public final class NetworkUtils {
     public static URL getUrlForWeatherForecast(Context context) {
 
 
-        String api_key = context.getResources().getString(R.string.open_weather_api_key);
 
         double[] preferredCoordinates = SunshinePreferences.getLocationCoordinates(context);
         double latitude = preferredCoordinates[0];
@@ -97,7 +96,7 @@ public final class NetworkUtils {
                 .appendQueryParameter(LON_PARAM, String.valueOf(longitude))
                 .appendQueryParameter(FORMAT_PARAM, format)
                 .appendQueryParameter(UNITS_PARAM, units)
-                .appendQueryParameter(API_KEY, api_key)
+                .appendQueryParameter(API_KEY, ConfidentialConstants.OPEN_WEATHER_MAP_API_KEY)
                 .build();
 
         try {
@@ -117,11 +116,10 @@ public final class NetworkUtils {
      *
      */
     public static URL getUrlForLongLatQuery(Context context, String newLocation) {
-        String api_key = context.getResources().getString(R.string.open_weather_api_key);
 
         Uri weatherQueryUri = Uri.parse(GEOCODING_API_BASE_URL).buildUpon()
                 .appendQueryParameter(QUERY_PARAM, newLocation)
-                .appendQueryParameter(API_KEY, api_key)
+                .appendQueryParameter(API_KEY, ConfidentialConstants.OPEN_WEATHER_MAP_API_KEY)
                 .build();
 
         try {

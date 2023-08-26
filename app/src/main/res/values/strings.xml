@@ -26,8 +26,6 @@
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="open_weather_api_key">a6e74d3ce788a9354478b2db87f9d5c5</string>
-
     <!-- - - - - - - - - - - - - -
       - Used throughout Sunshine -
       - - - - - - - - - - - - - -->

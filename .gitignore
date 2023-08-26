@@ -1,5 +1,5 @@
 .DS_Store
-
+ConfidentialConstants.java
 # built application files
 *.apk
 *.ap_
