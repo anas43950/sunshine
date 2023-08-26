@@ -18,7 +18,6 @@ package com.technowapps.sunshine.utilities;
 import android.content.Context;
 import android.net.Uri;
 
-import com.example.android.sunshine.R;
 import com.technowapps.sunshine.data.SunshinePreferences;
 
 import java.io.IOException;
@@ -96,7 +95,7 @@ public final class NetworkUtils {
                 .appendQueryParameter(LON_PARAM, String.valueOf(longitude))
                 .appendQueryParameter(FORMAT_PARAM, format)
                 .appendQueryParameter(UNITS_PARAM, units)
-                .appendQueryParameter(API_KEY, ConfidentialConstants.OPEN_WEATHER_MAP_API_KEY)
+                .appendQueryParameter(API_KEY, Constants.OPEN_WEATHER_MAP_API_KEY)
                 .build();
 
         try {
@@ -119,7 +118,7 @@ public final class NetworkUtils {
 
         Uri weatherQueryUri = Uri.parse(GEOCODING_API_BASE_URL).buildUpon()
                 .appendQueryParameter(QUERY_PARAM, newLocation)
-                .appendQueryParameter(API_KEY, ConfidentialConstants.OPEN_WEATHER_MAP_API_KEY)
+                .appendQueryParameter(API_KEY, Constants.OPEN_WEATHER_MAP_API_KEY)
                 .build();
 
         try {

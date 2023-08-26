@@ -1,5 +1,5 @@
 .DS_Store
-ConfidentialConstants.java
+app/src/main/java/com/technowapps/sunshine/utilities/ConfidentialConstants.java
 # built application files
 *.apk
 *.ap_
